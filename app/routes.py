@@ -23,4 +23,15 @@ def sum(arg):
         return "Error occured!", 500
     return total
 
+@app.route('/maxim')
+def maxim():
+    data = request.args.get('data', None)
+    _list = list(map(int, data.split(',')))
+    
+    total = max(_list)
+    return 'Result= ' + str(total)
+
+def max(arg):
+    total = max(arg)
+    return total
 
