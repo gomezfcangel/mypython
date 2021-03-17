@@ -37,7 +37,7 @@ class TestSum(unittest.TestCase):
         self.assertEqual(result[1], 500) 
         
     def test_fail_max_value(self):
-        data = [1, 2, '3', '4', '5']
+        data = [1, 2, 3, 4, 5]
         result = max(data)
         
         self.assertEqual(result, 5) 
